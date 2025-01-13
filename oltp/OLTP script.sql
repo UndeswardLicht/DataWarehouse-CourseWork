@@ -1,12 +1,12 @@
-drop table if exists Purchases;
 drop table if exists Rents;
-drop table if exists Items;
-drop table if exists Rentees;
-drop table if exists Categories;
-drop table if exists Subcategories;
-drop table if exists Payments;
+drop table if exists Purchases;
 drop table if exists Items_Rents;
+drop table if exists Items;
+drop table if exists Payments;
+drop table if exists Rentees;
+drop table if exists Subcategories;
 drop table if exists Staff;
+drop table if exists Categories;
 
 CREATE TABLE Categories(
     id SERIAL PRIMARY KEY,
@@ -43,6 +43,7 @@ CREATE TABLE Items(
     brand TEXT NOT NULL,
     category_id INT NOT NULL,
     subcategory_id INT NOT NULL,
+    sold BOOLEAN NOT NULL DEFAULT FALSE,
     FOREIGN KEY(subcategory_id) REFERENCES Subcategories(id),
     FOREIGN KEY(category_id) REFERENCES Categories(id)
 );
