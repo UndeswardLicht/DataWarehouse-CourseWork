@@ -10,7 +10,7 @@ drop table if exists Categories;
 
 CREATE TABLE Categories(
     id SERIAL PRIMARY KEY,
-    category_name TEXT NOT NULL
+    category_name VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE Staff(
@@ -21,26 +21,26 @@ CREATE TABLE Staff(
 
 CREATE TABLE Subcategories(
     id SERIAL PRIMARY KEY,
-    subcategory_name TEXT NOT NULL
+    subcategory_name VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE Rentees(
-    passport_id TEXT NOT NULL PRIMARY KEY UNIQUE,
-    first_name TEXT NOT NULL,
-    last_name TEXT NOT NULL,
-    phone TEXT NOT NULL
+    passport_id VARCHAR(255) NOT NULL PRIMARY KEY UNIQUE,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    phone VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE Payments(
     id SERIAL PRIMARY KEY,
-    amount INT NOT NULL,
+    amount MONEY NOT NULL,
     payment_date TIME(0) WITHOUT TIME ZONE NOT NULL
 );
 
 CREATE TABLE Items(
     id SERIAL PRIMARY KEY,
-    model TEXT NOT NULL,
-    brand TEXT NOT NULL,
+    model VARCHAR(255) NOT NULL,
+    brand VARCHAR(255) NOT NULL,
     category_id INT NOT NULL,
     subcategory_id INT NOT NULL,
     sold BOOLEAN NOT NULL DEFAULT FALSE,
@@ -69,7 +69,7 @@ CREATE TABLE Rents(
     id SERIAL PRIMARY KEY,
     item_id INT NOT NULL,
     payment_id INT NOT NULL,
-    rentee_id TEXT NOT NULL,
+    rentee_id VARCHAR(255) NOT NULL,
     rented_from TIME(0) WITHOUT TIME ZONE NOT NULL,
     rented_to TIME(0) WITHOUT TIME ZONE NOT NULL,
     FOREIGN KEY (payment_id) REFERENCES Payments(id),
