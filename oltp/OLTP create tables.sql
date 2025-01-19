@@ -1,13 +1,13 @@
-drop table if exists Latest_Updates;
-drop table if exists Items_Purchases;
-drop table if exists Items_Rents;
-drop table if exists Rents;
-drop table if exists Purchases;
-drop table if exists Items;
-drop table if exists Rentees;
-drop table if exists Staff;
-drop table if exists Subcategories;
-drop table if exists Categories;
+DROP TABLE IF EXISTS Latest_Updates;
+DROP TABLE IF EXISTS Items_Purchases;
+DROP TABLE IF EXISTS Items_Rents;
+DROP TABLE IF EXISTS Rents;
+DROP TABLE IF EXISTS Purchases;
+DROP TABLE IF EXISTS Items;
+DROP TABLE IF EXISTS Rentees;
+DROP TABLE IF EXISTS Staff;
+DROP TABLE IF EXISTS Subcategories;
+DROP TABLE IF EXISTS Categories;
 
 CREATE TABLE Categories(
     id SERIAL PRIMARY KEY,
