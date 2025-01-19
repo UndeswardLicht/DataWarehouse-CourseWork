@@ -32,6 +32,7 @@ CREATE TABLE Rentees(
     phone VARCHAR(255) 
 );
 
+--BRAND should be rather another table like category and subcategory, but I understood it too late and didn't want to rewrite this. 
 CREATE TABLE Items(
     id SERIAL PRIMARY KEY,
     model VARCHAR(255) NOT NULL,
@@ -60,26 +61,24 @@ CREATE TABLE Purchases(
 CREATE TABLE Rents(
     id SERIAL PRIMARY KEY,
     rentee_id VARCHAR(255) NOT NULL,
-    rented_from DATE NOT NULL,
-    rented_to DATE NOT NULL,
     payment_date TIMESTAMP WITHOUT TIME ZONE NOT NULL,
     total_price DECIMAL(10, 2) NOT NULL,
     FOREIGN KEY(rentee_id) REFERENCES Rentees(passport_id)
 );
 
 CREATE TABLE Items_Rents(
-    item_id INT NOT NULL UNIQUE,
-    rent_id INT NOT NULL UNIQUE,
-    quantity INT NOT NULL DEFAULT 1,
+    item_id INT NOT NULL,
+    rent_id INT NOT NULL,
+    rented_from DATE NOT NULL,
+    rented_to DATE NOT NULL,
     FOREIGN KEY(item_id) REFERENCES Items(id),
     FOREIGN KEY(rent_id) REFERENCES Rents(id),
-    PRIMARY KEY(item_id, rent_id),
-    CONSTRAINT quantity_nonnegative CHECK (quantity >= 0)
+    PRIMARY KEY(item_id, rent_id)
 );
 
 CREATE TABLE Items_Purchases(
-    item_id INT NOT NULL UNIQUE,
-    purchase_id INT NOT NULL UNIQUE,
+    item_id INT NOT NULL,
+    purchase_id INT NOT NULL,
     quantity INT NOT NULL DEFAULT 1,
     FOREIGN KEY(item_id) REFERENCES Items(id),
     FOREIGN KEY(purchase_id) REFERENCES Purchases(id),
@@ -94,3 +93,5 @@ CREATE TABLE Latest_Updates(
     latest_update_item TIMESTAMP WITHOUT TIME ZONE NOT NULL DEFAULT '2001-01-01 01:01:01'
 );
 
+INSERT into Latest_Updates(latest_update_purchase,latest_update_rent,latest_update_item)
+VALUES ('2001-01-01 01:01:01', '2001-01-01 01:01:01', '2001-01-01 01:01:01');

@@ -1,11 +1,13 @@
-﻿date,employee,item,amount
-2024-05-05,Giordano Bruno,Yamaha c40,120
-2024-12-28,Eratosthenes,Selmer ASL3,50
-2024-05-29,Giordano Bruno,Granada g1,200
-2024-10-27,Eratosthenes,Alhambra segovia,500
-2024-12-16,Mikolaj Kopernik,Hofmann HF20,350.39999999999998
-2024-04-20,Giordano Bruno,Thomann sp-320,60
-2024-10-04,Eratosthenes,Yamaha fp210,175
-2024-04-05,Mikolaj Kopernik,Richwood NP-72,24
-2024-11-15,Giordano Bruno,Thomann UKUK,32
-2024-03-15,Eratosthenes,Meinl 23,0.75
+﻿date,employee,item
+2024-01-01,Giordano Bruno,Yamaha c40
+2024-01-02,Eratosthenes,Selmer ASL3
+2024-01-01,Giordano Bruno,Granada g1
+2024-01-01,Mikolaj Kopernik,Granada g1
+2024-01-04,Eratosthenes,Alhambra segovia
+2024-01-05,Mikolaj Kopernik,Hofmann HF20
+2024-01-01,Giordano Bruno,Thomann sp-320
+2024-01-07,Eratosthenes,Yamaha fp210
+2024-01-08,Mikolaj Kopernik,Richwood NP-72
+2024-01-09,Giordano Bruno,Thomann UKUK
+2024-01-07,Eratosthenes,Meinl 23
+2024-01-07,Eratosthenes,Meinl 23

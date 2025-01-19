@@ -1,23 +1,26 @@
-﻿item,category,subcategory
-Richwood NP-72,Guitar,acoustic guitar
-Yamaha c40,Guitar,classical guitar
-Thomann sp-320,keys,digital piano
-Granada g1,guitar,classical guitar
-Alhambra segovia,guitar,classical guitar
-Hofmann HF20,guitar,acoustic guitar
-Meinl 23,drums,sticks
-Yamaha fp210,keys,digital piano
-Yamaha G1,keys,grand piano
-Yamaha o2,wind,oboe
-Selmer ASL3,wind,saxophone
-Thomann UKUK,folk,folk strings
-Selmer  SAA43,wind,saxophone
-Hohner BD-14B,strings,double bass
-Yamaha V3-SKA,strings,violin
-Hofmann OPC,keys,organ
-Richwood NP-73,Guitar,grand piano
-Flight V7-A3R,strings,violin
-Flight UK-02BL,folk,folk strings
-Thomann GAP,Guitar,acoustic guitar
-Meinl 44,drums,sticks
-Hohner SAX-ALT4,wind,saxophone
+﻿item,category,subcategory,price,rent price,delivered
+Richwood NP-72,Guitar,acoustic guitar,"413,2",50,2022-05-22
+Yamaha c40,Guitar,classical guitar,90,10,2022-06-29
+Thomann sp-320,keys,digital piano,12.199999999999999,5,2023-05-23
+Granada g1,guitar,classical guitar,67,6,2022-12-14
+Alhambra segovia,guitar,classical guitar,80,8,2023-11-20
+Hofmann HF20,guitar,acoustic guitar,"200,0",10,2023-07-04
+Meinl 23,drums,sticks,340,30,2022-11-28
+Yamaha fp210,keys,digital piano,78,15,2023-02-08
+Yamaha G1,keys,grand piano,1000,50,2023-06-16
+Yamaha o2,wind,oboe,100.2,20,2022-11-29
+Selmer ASL3,wind,saxophone,120,13,2023-08-31
+Thomann UKUK,folk,folk strings,50,10,2023-09-07
+Selmer  SAA43,wind,saxophone,200,5,2022-04-21
+Hohner BD-14B,strings,double bass,500,100,2022-06-11
+Yamaha V3-SKA,strings,violin,350.39999999999998,76,2023-05-26
+Hofmann OPC,keys,organ,60,21,2023-10-01
+Richwood NP-73,Guitar,grand piano,175,40,2022-09-05
+Flight V7-A3R,strings,violin,24,15,2023-08-13
+Flight UK-02BL,folk,folk strings,32,12,2023-01-30
+Thomann GAP,Guitar,acoustic guitar,750.20000000000005,10,2022-03-20
+Meinl 44,drums,sticks,10,1,2023-01-02
+Hohner SAX-ALT4,wind,saxophone,25.399999999999999,5,2022-08-16
+Steinway Grande,keys,super organ,100000,1000,2022-09-16
+Kazoo k18,wind,folk wind,0.75,0.1,2024-01-23
+Dijeridoo djs,wind,folk wind,20.2,5,2024-01-25
